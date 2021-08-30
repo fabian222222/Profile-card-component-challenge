@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="script.js" defer></script>
+    
+    <title>Frontend Mentor | Profile card component</title>
+
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+    <section class="profile_card">
+        <div class="profile_card_container">
 
-  803K
-  Likes
+            <div class="profile_card_container_background">
+                <img src="/../images/bg-pattern-top.svg" class="profile_card_container_background_top" alt="">
+                <img src="/../images/bg-pattern-bottom.svg" class="profile_card_container_background_bottom" alt="">
+            </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <div class="profile_card_card">
+                <div class="profile_card_card_container">
+
+                    <div class="profile_card_card_background">
+                        <img src="/../images/bg-pattern-card.svg" alt="">
+                        <div class="profile_card_card_picture">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="profile_card_card_information">
+                        <p class="profile_card_card_information_text">
+                            <span class="profile_card_card_information_text_name"></span>
+                            <span class="profile_card_card_information_text_age"></span>
+                        </p>
+                        <p class="profile_card_card_information_state">
+                        </p>
+                    </div>
+    
+                    <div class="profile_card_card_stat">
+                        <div class="profile_card_card_information_follower">
+                            <p class="profile_card_card_information_stat follower"></p>
+                            <p class="profile_card_card_information_follower_title">Followers</p>
+                        </div>
+                        <div class="profile_card_card_information_Likes">
+                            <p class="profile_card_card_information_stat likes"></p>
+                            <p class="profile_card_card_information_likes_title">Likes</p>
+                        </div>
+                        <div class="profile_card_card_information_photos">
+                            <p class="profile_card_card_information_stat photos"></p>
+                            <p class="profile_card_card_information_photos_title">Photos</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </body>
 </html>
